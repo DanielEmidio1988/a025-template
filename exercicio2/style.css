@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
+    border: 1px solid black;
+    width: 33vh;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+@media screen and (max-device-width: 481px) {
+
+    main{
+        flex-direction: column;
+    }
+
+    section{
+        width: 100vw;
+        align-items: start;
+        color: red;
+    }
+
+    
+}
