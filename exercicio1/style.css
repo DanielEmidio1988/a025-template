@@ -1,17 +1,31 @@
-#texto-fonte-root{
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 20px;
+}
+
+#texto-fonte-root{    
+    font-size: 3rem; /*será 3x o tamanho declarado no root (HTML)*/
 
 }
 
 #texto-paddings-verticais{
-
+    background-color: orangered;
+    padding: 2em 0; /*em relação ao root (HTML)*/
 }
 
 #altura-porcentagem-comprimento{
+    height: 15vw;
+    background-color: orange;
 
 }
 
 #comprimento-metade-altura{
-
+    width: 50vh;
+    background-color: red;
 }
 
 .container{
@@ -20,14 +34,22 @@
     font-size: 20px;
 }
 
-#fonte-setenta{
+/* ul{ apenas um teste
+    font-size: 30px;
+} */
 
+#fonte-setenta{
+    font-size: 0.7em; /*70% em relação ao pai (classe container)*/
 }
 
 #comprimento-pai{
 
+    background-color: blue;
+    width: 10%;
 }
 
 #altura-pai{
-
+    background-color: brown;
+    height: 10%; /*não vai acontecer nada pq nada foi declarado no pai (ul),
+    caso eu declare alguma coisa na ul, haverá alguma mudança*/
 }
